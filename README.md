@@ -208,19 +208,19 @@ The HMI provides:
 
 The developed system successfully demonstrates:
 
-✅ Real-time object detection
+ Real-time object detection
 
-✅ Robust contour-based tracking
+ Robust contour-based tracking
 
-✅ Pixel-to-robot coordinate transformation
+ Pixel-to-robot coordinate transformation
 
-✅ Raspberry Pi to PLC communication through Modbus TCP
+ Raspberry Pi to PLC communication through Modbus TCP
 
-✅ PLC-based motion control
+ PLC-based motion control
 
-✅ Vision-guided Delta Robot tracking
+ Vision-guided Delta Robot tracking
 
-✅ Stable tracking performance in laboratory conditions
+ Stable tracking performance in laboratory conditions
 
 ---
 
