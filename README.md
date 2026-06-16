@@ -76,7 +76,7 @@ The PLC executes motion control logic and commands the Delta Robot to track the 
 The Delta Robot executes tracking commands received from the PLC.
 
 <p align="center">
-  <img src="docs/images/delta_robot.jpg" width="500">
+  <img src="robot_setup_and_results/delta_robot.jpg" width="500">
 </p>
 
 ---
@@ -86,7 +86,7 @@ The Delta Robot executes tracking commands received from the PLC.
 The Logitech USB camera mounted above the workspace captures images for object detection and tracking.
 
 <p align="center">
-  <img src="docs/images/camera_setup.jpg" width="500">
+  <img src="robot_setup_and_results/camera_setup.jpg" width="500">
 </p>
 
 ---
@@ -114,7 +114,7 @@ The object is segmented using HSV thresholding and morphological operations.
 ## Binary Mask Output
 
 <p align="center">
-  <img src="docs/images/mask_result.jpg" width="350">
+ <img src="robot_setup_and_results/mask_result.jpg" width="350">
 </p>
 
 The binary mask isolates the target object from the background and removes noise before contour extraction.
@@ -124,7 +124,7 @@ The binary mask isolates the target object from the background and removes noise
 ## Object Tracking Result
 
 <p align="center">
-  <img src="docs/images/tracking_result.jpg" width="550">
+  <img src="robot_setup_and_results/tracking_result.jpg" width="550">
 </p>
 
 The detected object center is used to calculate robot coordinates and generate tracking commands.
@@ -151,7 +151,7 @@ The following data are exchanged:
 ## Modbus Server Configuration
 
 <p align="center">
-  <img src="docs/images/modbus_server.jpg" width="900">
+  <img src="robot_setup_and_results/modbus_server.jpg" width="900">
 </p>
 
 ---
@@ -159,7 +159,7 @@ The following data are exchanged:
 ## Modbus Device Configuration
 
 <p align="center">
-  <img src="docs/images/modbus_config.jpg" width="900">
+  <img src="robot_setup_and_results/modbus_config.jpg" width="900">
 </p>
 
 ---
@@ -167,7 +167,7 @@ The following data are exchanged:
 ## PLC Variable Mapping
 
 <p align="center">
-  <img src="docs/images/plc_mapping.jpg" width="900">
+  <img src="robot_setup_and_results/plc_mapping.jpg" width="900">
 </p>
 
 The PLC receives vision coordinates through mapped Modbus registers and updates robot target positions.
@@ -199,7 +199,7 @@ The HMI provides:
 * Robot status visualization
 
 <p align="center">
-  <img src="docs/images/hmi_interface.jpg" width="900">
+  <img src="robot_setup_and_results/hmi_interface.jpg" width="900">
 </p>
 
 ---
@@ -208,54 +208,23 @@ The HMI provides:
 
 The developed system successfully demonstrates:
 
- Real-time object detection
+-> Real-time object detection
 
- Robust contour-based tracking
+-> Robust contour-based tracking
 
- Pixel-to-robot coordinate transformation
+-> Pixel-to-robot coordinate transformation
 
- Raspberry Pi to PLC communication through Modbus TCP
+-> Raspberry Pi to PLC communication through Modbus TCP
 
- PLC-based motion control
+-> PLC-based motion control
 
- Vision-guided Delta Robot tracking
+-> Vision-guided Delta Robot tracking
 
- Stable tracking performance in laboratory conditions
-
----
-
-# Repository Structure
-
-```text
-vision-guided-delta-robot-tracking/
-
-├── README.md
-
-├── raspberry_pi/
-│   ├── object_tracking.py
-│   └── calibration.py
-
-├── plc/
-│   ├── motion_program.st
-│   ├── tracking_handshake.st
-│   └── automation_studio_project/
-
-├── arduino/
-│   └── gripper_control.ino
-
-├── docs/
-│   └── images/
-│       ├── delta_robot.jpg
-│       ├── camera_setup.jpg
-│       ├── mask_result.jpg
-│       ├── tracking_result.jpg
-│       ├── modbus_server.jpg
-│       ├── modbus_config.jpg
-│       ├── plc_mapping.jpg
-│       └── hmi_interface.jpg
-```
+-> Stable tracking performance in laboratory conditions
 
 ---
+
+
 
 # Technologies Used
 
@@ -267,20 +236,9 @@ vision-guided-delta-robot-tracking/
 * Modbus TCP
 * Arduino
 * Delta Robot
-* Human Machine Interface (HMI)
+* HMI
 
----
 
-# Future Improvements
-
-* Deep Learning-Based Object Detection
-* Multi-Object Tracking
-* Automated Pick-and-Place Operations
-* ROS Integration
-* 3D Vision Systems
-* Dynamic Path Planning
-
----
 
 # Author
 
